@@ -123,13 +123,13 @@ while num <= 5:
 
 # ---------------------------------
 
-for i in range(5):
-    for j in range(3):
-        if i == j:
-            print("Hello",end= ' ')
-    print(i,end=' ')
-else:
-    print("Else Block Executed")
+# for i in range(5):
+#     for j in range(3):
+#         if i == j:
+#             print("Hello",end= ' ')
+#     print(i,end=' ')
+# else:
+#     print("Else Block Executed")
 
 # Hello 0 Hello 1 Hello 2 3 4 Else Block Executed
 
