@@ -131,4 +131,5 @@ if rev == safe:  # 101 == 101
 else:
     print("Fail")
 
-# 1 to 10000  Armstrong numbers
+
+

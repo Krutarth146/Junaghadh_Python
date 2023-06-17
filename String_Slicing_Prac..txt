@@ -1,0 +1,22 @@
+str1 = "Hello_My name Is Priyank Modi"
+
+print(str1[5])
+print(strl[-l]) 
+print(str1[1:4])
+print (str1[4: 10])
+print(strl[:])
+print(strl[l:]) 
+print(str1[:6])
+print(str1[2:7:1])
+
+print(str1[-9])
+print(str1[-9:-2])
+print(str1[2:6:-1])
+print(str1[6:2:-1])
+print(str1[2:9:-2])
+print(strl[.
+print(str1[:5:-2])
+print(str1[1:5:])
+print(str1[5:1:])
+print(strl[-l])
+print(strl[:-l:])
