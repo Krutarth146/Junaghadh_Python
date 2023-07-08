@@ -81,3 +81,29 @@ for row in range(len(list2)):
 
 # HW
 # 10 20 30 60 90 80 71 40 51  (Spiral)
+
+
+
+list2 = [[10,20,30], 
+         [40,51,60], 
+         [71,80,90]]
+
+
+for sublist in list2:  # [40,51,60]
+    for element in sublist:
+        print(element)  # 10 20 30 40 51 60
+
+
+# --------------------
+
+for row in range(len(list2)):  # [10,20,30]
+    for col in range(len(list2[row])):
+        print(list2[row][col])  # list2[0][1]
+
+
+# import random
+
+# print(random.random())
+# print(random.randint(1,100))
+# print(random.randrange(1,100))
+# print(random.choice(list2))
