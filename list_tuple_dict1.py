@@ -188,7 +188,7 @@ for m in l2:
 print(dict1)
 
 
-# Comprehension
+# List Comprehension
 
 l4 = [i for i in range(5)]
 print(l4)  # [0, 1, 2, 3, 4]
