@@ -164,9 +164,61 @@ for i in l5:
     for j in range(len(l2)):
         if i == l2[j]:
             temp.append(j)
-            print(temp)
+            # print(temp)
     dict5[i] = temp
 
 print(dict5)
 
-# print([{i:j} for i in l5 for j in range(len(l2)) if i == l2[j]])
+print([{i:[j for j in range(len(l2)) if i == l2[j]] for i in l5}])
+
+l9 = [{i: [j for j in range(len(l2)) if i == l2[j]]} for i in l5 ]
+print(l9)
+
+dict_new = {}
+
+for i in l9:
+    dict_new.update(i)
+print(dict_new)  # {1: [3], 2: [0, 1, 2, 4, 9, 10], 3: [5, 6], 4: [7], 5: [8]}
+
+
+l4 = [k for k in range(1,11) if k % 2 != 0]
+print(l4)   # [1, 3, 5, 7, 9]
+
+# 32732737235
+
+# l4 = [(10,3), (1,2,7), (2,1,3), (4,0)]
+
+
+# def last_digit(ele):
+#     return ele[-1]
+
+# l4.sort(key=last_digit)
+# print(l4)
+
+l4 = [(10,3), (1,2,2), (2,1,3), (4,0)]
+
+for i in range(len(l4)):
+    for j in range(i+1, len(l4)):
+        if l4[i][-1] > l4[j][-1]:
+            l4[i],l4[j] = l4[j],l4[i]
+
+print(l4)
+
+# -------------------
+str1 = ["Palindrome", "eye", 'Uday']
+
+blank = []
+for i in str1:
+    if i.lower()[::-1] == i.lower():
+        blank.append(True)
+    else:
+        blank.append(False)
+print(blank)
+
+palindrome = [i for i in str1 if i.lower()[::-1] == i.lower()]
+print(palindrome)
+
+# List is a collection which is ordered and changeable. Allows duplicate members.
+# Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+# Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+# Dictionary is a collection which is ordered** and changeable. No duplicate members.
