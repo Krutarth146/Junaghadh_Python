@@ -65,7 +65,7 @@ class Student:
         print("This is Default Constructor")
 
 
-    def display_data(self):    # Instance Method
+    def display_data11111(self):    # Instance Method
         print(self.name,"'s Id = ",self.id)
 
 
@@ -78,8 +78,8 @@ class Student:
 harsh = Student()
 parth = Student()
 
-harsh.display_data()
-parth.display_data()
+harsh.display_data11111()
+parth.display_data11111()
 
 print(harsh.school_name)
 print(parth.school_name)
